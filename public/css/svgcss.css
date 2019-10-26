@@ -1,0 +1,40 @@
+	.wrapper{
+			position: absolute;
+			top: 45%;
+			left: 50%;
+			transform:translate(-50%,-50%);
+			width:30%;
+		}
+		svg{
+			stroke-dasharray:1000;
+		}
+		path{
+			stroke:#fff;
+			fill:#fff;
+			opacity:10;
+			stroke-dasharray:1000;
+			/* animation:animate 3s cubic-bezier(0,0.23,1,.1); */animation:animate 5s cubic-bezier(0,0.23,1,.1);
+		}
+		@keyframes animate{
+			0%{
+				opacity:0;
+				fill:none;
+				stroke-dashoffset:1000;
+			}
+			30%{
+				opacity:10;
+				fill:none;
+				stroke-dashoffset:1000;
+			}
+			90%{
+				fill:rgba(255,255,255,0);
+			}
+			100%{
+				opacity:10;
+				fill:rgba(255,255,255,1);
+				stroke-dashoffset:0;
+			}
+		}
+		.st0{
+	 		fill:none; stroke:black;stroke-width:10;stroke-miterlimit:10;
+	 	}
